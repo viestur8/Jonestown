@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Stalinist+One|Tangerine');
+// Font Variables
+$roboto-slab: Cinzel;
+// $open-sans: 'Open Sans', sans-serif;
+// $primary-color:
+html {
+  .jumbotron{
+  background: url(falling_roses.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+
+  }
+  body {
+  font: 100% $roboto_slab;
+  font-weight: normal;
+  // color: $primary-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $roboto_slab;
+  font-weight: normal;
+}
+
+.button {
+  font-family: $roboto-slab;
+  font-weight: bold;
+}
+  }

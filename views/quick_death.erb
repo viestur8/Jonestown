@@ -1,0 +1,25 @@
+<% @images.each do |image| %>
+
+  <%= image_tag(
+
+    image[ 'macarron' ], :size => '600x400', :alt => image[ 'alt' ]
+
+  ) %>
+
+<% end %>
+@images = [
+    { 'macaroon' => "1.jpg", 'alt' => "College Building" },
+
+    { 'dare' => "2.jpg", 'alt' => "Something else" }
+
+]
+  selected = params[:selected]
+  if selected == "quick"
+      erb :quick_death
+  elsif selected == "slow"
+      @pic = Swapir.find_person(params[:search_input])
+    elsif selected == "nonlethal"
+        @pic = Swapir.find_person(params[:search_input])
+      elsif selected == "special"
+          @pic = Swapir.find_person(params[:search_input])
+  end

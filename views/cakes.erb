@@ -1,0 +1,9 @@
+<link href="main.css" rel="stylesheet" >
+
+
+<%  @cakes.each do |key,value| %>
+        <%= value.name %>
+        <img src="<%= value.photo %>">
+        <%= value.price %>
+        <%= value.description %>
+<% end %>

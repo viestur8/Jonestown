@@ -1,9 +1,9 @@
 <link href="main.css" rel="stylesheet" >
 
 
-<%  @cakes.each do |key,value| %>
-        <%= value.name %>
+<%  @cakes.each do |key, value| %>
+      <h1> Model:  <%= value.name %></h1>
         <img src="<%= value.photo %>">
-        <%= value.price %>
-        <%= value.description %>
+      <h1>  <%= value.price %></h1>
+      <h1>  <%= value.description %><h/1>
 <% end %>

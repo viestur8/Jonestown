@@ -13,7 +13,7 @@ my_cookies = {
   dare: dare,
   bery: bery
   }
- happy = SlowDeath.new('Happy Birthday, ...', '/cakes/birthday_cake.jpg', '$199.99', "For a more Exciting Day in the Office")
+ happy = SlowDeath.new('Happy Birthday, ...', '/cakes/birthday_cake.jpg', '$199.99', "For a more Exciting Day in the Office..")
 
  chair = SlowDeath.new('LZ Boy', '/cakes/chair.jpg', '$199.99', "After a long day at the Office")
 
@@ -44,4 +44,7 @@ get '/cakes' do
       puts @cakes
       puts "HELLO WORLD"
     erb :cakes
+end
+get 'quick' do
+  erb :quick_death
 end
